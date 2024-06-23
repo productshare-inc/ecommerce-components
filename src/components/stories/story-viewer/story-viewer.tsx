@@ -13,7 +13,12 @@ interface Props extends ReactInstaStoriesProps {
 }
 // ==============================================================
 
-export default function StoryViewer({ open, handleClose, stories, currentIndex }: Props) {
+export default function StoryViewer({
+  open,
+  handleClose,
+  stories,
+  currentIndex,
+}: Props) {
   return (
     <Modal open={open} onClose={handleClose}>
       <ModalWrapper>
@@ -22,7 +27,11 @@ export default function StoryViewer({ open, handleClose, stories, currentIndex }
           currentIndex={currentIndex}
           onAllStoriesEnd={handleClose}
           progressStyles={{ height: 3, borderRadius: 10 }}
-          progressWrapperStyles={{ height: 3, borderRadius: 10, background: "#373F50" }}
+          progressWrapperStyles={{
+            height: 3,
+            borderRadius: 10,
+            background: "#373F50",
+          }}
         />
       </ModalWrapper>
     </Modal>
