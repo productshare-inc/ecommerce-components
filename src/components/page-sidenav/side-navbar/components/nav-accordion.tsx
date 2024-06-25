@@ -1,4 +1,4 @@
-//"use client";
+"use client";
 
 import { Fragment, useState } from "react";
 import Collapse from "@mui/material/Collapse";

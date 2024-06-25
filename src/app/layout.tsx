@@ -2,9 +2,7 @@ import { ReactNode } from "react";
 import { Open_Sans } from "next/font/google";
 import { GoogleAnalytics } from '@next/third-parties/google'
 
-//@ts-ignore
-const openSans : NextFont = Open_Sans({ subsets: ["latin"] });
-
+export const openSans = Open_Sans({ subsets: ["latin"] });
 
 // THEME PROVIDER
 import ThemeProvider from "theme/theme-provider";
@@ -18,7 +16,6 @@ import ProgressBar from "components/progress";
 
 // IMPORT i18n SUPPORT FILE
 import "i18n";
-import {NextFont} from "next/dist/compiled/@next/font";
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
@@ -37,4 +34,3 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     </html>
   );
 }
-export {openSans};
